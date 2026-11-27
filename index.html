@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Ring Donuts | San Antonio's Finest</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fffaf0;
+        }
+        header {
+            background-color: #ffb7c5;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #d87093;
+            margin-bottom: 30px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item h4 {
+            margin: 10px 0;
+            font-size: 1.3rem;
+        }
+        .menu-item .price {
+            color: #d87093;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .about {
+            text-align: center;
+            background-color: #ffe4e1;
+            padding: 40px 20px;
+            border-radius: 20px;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .info-box h4 {
+            color: #d87093;
+            border-bottom: 2px solid #ffb7c5;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Golden Ring Donuts</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h2>Golden Ring Donuts</h2>
+    <p>The Sweetest Circles in San Antonio!</p>
+</div>
+
+<div class="container">
+    <section id="menu">
+        <h3>Our Delicious Menu</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h4>Glazed Classic</h4>
+                <p>A timeless favorite, light and airy.</p>
+                <p class="price">$1.50</p>
+            </div>
+            <div class="menu-item">
+                <h4>Chocolate Sprinkle</h4>
+                <p>Rich chocolate with colorful sprinkles.</p>
+                <p class="price">$1.75</p>
+            </div>
+            <div class="menu-item">
+                <h4>Strawberry Frosted</h4>
+                <p>Sweet pink frosting with a fruity kick.</p>
+                <p class="price">$1.75</p>
+            </div>
+            <div class="menu-item">
+                <h4>Maple Bacon</h4>
+                <p>The perfect salty and sweet combo.</p>
+                <p class="price">$2.50</p>
+            </div>
+            <div class="menu-item">
+                <h4>Red Velvet</h4>
+                <p>Velvety smooth with cream cheese icing.</p>
+                <p class="price">$2.25</p>
+            </div>
+            <div class="menu-item">
+                <h4>Jelly Filled</h4>
+                <p>Bursting with fresh fruit jelly.</p>
+                <p class="price">$2.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h3>About Us</h3>
+        <p>Golden Ring Donuts has been serving the San Antonio community with fresh, handmade treats since 2024. We believe that every donut should be a little piece of happiness. Our recipes are family secrets, and our ingredients are always fresh!</p>
+    </section>
+
+    <section id="contact">
+        <div class="info-section">
+            <div class="info-box">
+                <h4>Hours of Operation</h4>
+                <p><strong>Monday - Friday:</strong> 6:00 AM - 3:00 PM</p>
+                <p><strong>Saturday - Sunday:</strong> 7:00 AM - 4:00 PM</p>
+            </div>
+            <div class="info-box">
+                <h4>Find Us</h4>
+                <p>123 Sweet Street<br>San Antonio, TX 78205</p>
+                <p><em>Phone: (210) 555-DONUT</em></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Golden Ring Donuts. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
